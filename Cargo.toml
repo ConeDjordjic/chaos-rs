@@ -1,0 +1,25 @@
+[package]
+name = "chaos-rs"
+version = "0.1.4"
+edition = "2024"
+authors = ["Nemanja Djordjic <cone.djordjic@gmail.com>"]
+license = "MIT"
+description = "Minimal library for chaos testing"
+repository = "https://github.com/ConeDjordjic/chaos-rs"
+keywords = ["testing", "failpoint", "chaos", "resilience"]
+categories = ["development-tools::testing"]
+readme = "README.md"
+
+[lib]
+name = "chaos_rs"
+path = "src/lib.rs"
+
+[dependencies]
+dashmap = "6.1.0"
+futures-timer = "3.0.3"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+chaos = []
